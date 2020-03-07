@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructures.Arrays;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
+            Problems.PrintSquares(1000000);
+            Console.ReadKey();
         }
     }
 }
