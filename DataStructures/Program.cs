@@ -1,4 +1,5 @@
 ﻿using DataStructures.Arrays;
+using DataStructures.Sorting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,14 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            Problems.PrintSquares(1000000);
+            //Problems.PrintSquares(1000000);
+
+            int[] arr = new int[7] { 3, 4, 2, 1, 5, 4, 9 };
+             SortingAlgos.MergeSort(arr, 0, arr.Length -1);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"{arr[i]} ");
+            }
             Console.ReadKey();
         }
     }
